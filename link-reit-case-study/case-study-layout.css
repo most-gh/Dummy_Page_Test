@@ -11,6 +11,8 @@
 .problem-heading,
 .how-heading { padding-right: 24px; }
 
+.case-hero h1 { text-align: left; }
+
 .problem-grid h2,
 .how-grid h2 {
   margin: 0;
