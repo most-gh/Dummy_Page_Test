@@ -1,0 +1,70 @@
+.problem-grid,
+.how-grid {
+  display: grid;
+  grid-template-columns: 1.45fr repeat(3, 1fr);
+  gap: 20px;
+  max-width: 1120px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+.problem-heading,
+.how-heading { padding-right: 24px; }
+
+.problem-grid h2,
+.how-grid h2 {
+  margin: 0;
+  font-size: 31px;
+  line-height: 1.08;
+  letter-spacing: -.055em;
+}
+
+.problem-grid article,
+.how-grid article {
+  border-top: 3px solid var(--pink);
+  padding: 18px 2px 0;
+}
+
+.problem-grid article > span,
+.how-grid article > span {
+  display: block;
+  margin-bottom: 30px;
+  color: var(--purple);
+  font-weight: 800;
+  font-size: 12px;
+  letter-spacing: .08em;
+}
+
+.problem-grid h3,
+.how-grid h3 {
+  margin: 0 0 13px;
+  font-size: 19px;
+  line-height: 1.15;
+  letter-spacing: -.038em;
+}
+
+.problem-grid p,
+.how-grid p {
+  margin: 0;
+  color: #59637a;
+  font-size: 14px;
+  line-height: 1.65;
+}
+
+.how-grid {
+  max-width: none;
+  padding-left: max(32px, calc((100vw - 1120px) / 2));
+  padding-right: max(32px, calc((100vw - 1120px) / 2));
+  background: #f8f7fb;
+}
+
+@media (max-width: 850px) {
+  .problem-grid,
+  .how-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding: 72px 28px;
+  }
+  .problem-heading,
+  .how-heading { padding-right: 0; }
+}
