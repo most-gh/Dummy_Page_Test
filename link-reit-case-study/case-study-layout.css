@@ -12,6 +12,7 @@
 .how-heading { padding-right: 24px; }
 
 .case-hero h1 { text-align: left; }
+.case-hero h1 .h1-stat { color: var(--purple); white-space: nowrap; }
 
 .problem-grid h2,
 .how-grid h2 {
