@@ -13,6 +13,7 @@
 
 .case-hero h1 { text-align: left; }
 .case-hero h1 .h1-stat { color: var(--purple); white-space: nowrap; }
+.case-hero h1 .h1-number { display: inline-block; font-size: 1.38em; line-height: .75; letter-spacing: -.08em; }
 
 .problem-grid h2,
 .how-grid h2 {
