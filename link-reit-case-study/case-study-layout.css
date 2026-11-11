@@ -13,6 +13,25 @@
 
 .case-hero h1 { text-align: left; }
 
+.case-hero-97 { position: relative; overflow: hidden; }
+.hero-stat { display: flex; align-items: baseline; gap: 10px; margin: 0 0 8px; color: var(--purple); }
+.hero-stat strong { font-size: clamp(92px, 13vw, 180px); line-height: .72; letter-spacing: -.1em; }
+.hero-stat span { font: 700 14px/1 'DM Mono', monospace; letter-spacing: .08em; text-transform: uppercase; }
+.case-hero-97 h1 { max-width: 690px; margin-top: 21px; }
+.hero-visual { position: relative; min-height: 460px; }
+.hero-visual img { height: 100%; min-height: 460px; }
+.hero-visual-stat { position: absolute; right: -18px; bottom: 26px; display: flex; align-items: center; gap: 14px; padding: 18px 24px; background: var(--purple); color: white; box-shadow: 0 14px 30px rgba(42, 28, 91, .22); }
+.hero-visual-stat strong { font-size: 72px; line-height: .8; letter-spacing: -.09em; }
+.hero-visual-stat span { font: 600 10px/1.35 'DM Mono', monospace; letter-spacing: .1em; text-transform: uppercase; }
+.facts-97 strong { color: var(--purple); }
+
+.portfolio-band { max-width: none; margin: 0; padding: 92px max(32px, calc((100vw - 1120px) / 2)); background: linear-gradient(120deg, #312166, #584590); color: white; }
+.portfolio-band .eyebrow { color: #d8cdfb; }
+.portfolio-band > div { display: grid; grid-template-columns: minmax(200px, .55fr) minmax(0, 1.15fr) minmax(250px, .9fr); gap: 42px; align-items: center; }
+.portfolio-band strong { color: #fff; font-size: clamp(112px, 17vw, 240px); line-height: .7; letter-spacing: -.1em; }
+.portfolio-band h2 { margin: 0; font-size: clamp(32px, 4.2vw, 56px); line-height: 1; letter-spacing: -.065em; }
+.portfolio-band p:not(.eyebrow) { margin: 0; color: #ded9f5; font-size: 16px; line-height: 1.7; }
+
 .problem-grid h2,
 .how-grid h2 {
   margin: 0;
@@ -69,4 +88,11 @@
   }
   .problem-heading,
   .how-heading { padding-right: 0; }
+  .hero-stat strong { font-size: 105px; }
+  .hero-visual { min-height: 330px; }
+  .hero-visual img { min-height: 330px; }
+  .hero-visual-stat { right: 14px; bottom: 16px; }
+  .portfolio-band { padding: 70px 28px; }
+  .portfolio-band > div { grid-template-columns: 1fr; gap: 25px; }
+  .portfolio-band strong { font-size: 150px; }
 }
